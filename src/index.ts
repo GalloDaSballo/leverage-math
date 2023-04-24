@@ -86,3 +86,6 @@ const getMaxLeverage = async (amount: number): Promise<LeverageInfo> => {
 };
 
 console.log("getMaxLeverage", getMaxLeverage(INITIAL_STETH_BAL));
+
+// In practice, you flashloan the stETH -> Deposit -> Buy it back and repay + the stETH you have
+// Or, flashloan eBTC -> Buy stETH -> Deposit + the one you have -> Borrow eBTC -> Repay
